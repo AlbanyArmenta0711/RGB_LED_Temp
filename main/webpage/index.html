@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<script src='jquery-3.3.1.min.js'></script>
+		<script async src="app.js"></script>
+		<title>RGB Control</title>
+    </head>
+    <body>
+        <div id = "color_div">
+            <h1>RGB LED Controller</h1>
+            <label>Color Picker: </label>
+            <input type = "color" id="color_picker" value="#0000ff">
+            <br>
+            <br>
+            <input type = "button" value="Change Color!" onclick="updateColor()">
+        </div>
+        <hr>
+
+        <div id = "dht22_div">
+            <h1>DHT22 Sensor Readings</h1>
+            <label for="temperature_reading">Temperature: </label>
+            <div id = "temperature_reading"></div>
+            <label for="humidity_reading">Humidity: </label>
+            <div id = "humidity_reading"></div>
+        </div>
+        <hr>
+    </body>
+</html>
